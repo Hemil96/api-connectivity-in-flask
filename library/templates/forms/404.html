@@ -5,18 +5,23 @@
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
-    <div class="container">
+
+	<div class="container">
         <div class="row">
             <h3>Coin List</h3>
         </div>
         <div class="row" style="margin-top:20px">
             <div class="col-md-12">
                 <form role="form" action="" method="POST">
+
                     <div class="form-group">
-                        <label for="coin_name">Enter the coin name </label>
-                        <input class="form-control" name="coin_name" placeholder="coin_name">
+                        <ul class="list-group">
+                        	<h2>Coin not found</h2>
+					      <li class="list-group-item"><strong>Try correcting spelling</strong> </li>
+					      <li class="list-group-item"><strong>You can also search in shortforms [Eg. btc, eth, xpr, au]</strong> </li>
+					      <li class="list-group-item"><strong><a href={{ url_for('hello_world') }}>Back to the home page</a> </strong></li>
+					    </ul>
                     </div>
-                    <button type="submit" name='submit' class="btn btn-default" value="Form sent!">Submit</button>
                 </form>
             </div>
         </div>
