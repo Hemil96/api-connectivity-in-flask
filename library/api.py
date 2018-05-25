@@ -30,8 +30,3 @@ def full_name(name):
 			else:
 				pass
 		return "n/a"
-
-
-
-				
-
